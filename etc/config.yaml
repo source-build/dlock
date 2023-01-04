@@ -1,0 +1,17 @@
+server:
+  port: 7668
+  # The maximum length is 254 bytes
+  secretKey: "xxx"
+Log:
+  # Log file name
+  FileName: "dlock_diagnose"
+  # log file path
+  Path: "logs"
+  # Maximum capacity of a single file, unit:MB
+  FileMaxSize: 2
+  # Maximum number of expired files retained
+  MaxBackups: 3
+  # Maximum time interval to retain expired files,unit:Day
+  MaxAge: 5
+  # Whether to compress the scrolling log, and the gzip compression used
+  Compress: true
